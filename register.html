@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, user-scale=0">
+        <meta property="og:url" content="http://www.bioahead.com.br/cadastro/" />
+        <meta property="og:type" content="form" />
+        <meta property="og:title" content="BioAhead Cadastro" />
+        <meta property="og:description" content="Bioahead formulario de cadastro" />
+        <meta property="og:image" content="assets/icon/bioaheadicon.png" />
+        <title> BioAhead Cadastro</title>
+        <link rel="stylesheet" href="assets/css/stylebioaheadregister.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        
+    </head>
+    <body>
+        <!--CABEÇALHO-->
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <figure>
+                        <a href="main.html" title="Ir para página principal" target="_self">
+                            <img id="imglogo" src="assets/icon/bioaheadicon.png" alt="icone do site">
+                        </a>
+                    </figure>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="link" href="login.html" title="Ir para o login" target="_self">Já tenho conta</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>    
+            </div>
+        </header>
+        <!--CORPO-->
+        <section class="main">
+            <div class="container cadastro">
+                <form action="login.html" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="nome"><h4 class="h">Nome:</h4></label>
+                        <input id="nome" class="form-control" type="text" name="nomecad" autofocus maxlength="35" required autocomplete="on" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="sobrenome"><h4 class="h">Sobrenome:</h4></label>
+                        <input id="sobrenome" class="form-control" type="text" name="sobrenomecad" maxlength="35" required autocomplete="on" placeholder="Digite seu sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="foto"><h4 class="h">Foto de perfil:</h4></label>
+                        <input id="foto" class="form-control" type="file" name="photo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="dtanasc"><h4 class="h">Data de nascimento:</h4></label>
+                        <input id="dtanasc" class="form-control" type="date" name="datacad" max="2013-01-01" required autocomplete="on" placeholder="Digite sua data de nascimento">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><h4 class="h">E-mail:</h4></label>
+                        <input id="email" class="form-control" type="email" name="emailcad" maxlength="35" required autocomplete="on" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><h4 class="h">Senha:</h4></label>    
+                        <input id="password" class="form-control" type="password" name="passwordcad" maxlength="35" required autocomplete="off" placeholder="Digite sua senha">
+                    </div>
+                    <div class="form-group">
+                        <h4 class="h">Sexo:</h4>
+                        <input id="radio-masc" class="radio" type="radio" name="sexo" alt="Sexo masculino"> 
+                        <label for="radio-masc"><h4 class="h">Masculino</h4></label>
+                        <input id="radio-fem" class="radio" type="radio" name="sexo" value="Feminino" alt="Sexo Feminino">
+                        <label for="radio-fem"><h4 class="h">Feminino</h4></label>
+                    </div>
+                    <div class="form=group">
+                        <input id="checkbox" type="checkbox" required>
+                        <label for="checkbox"><h4 class="h">Eu declaro que li e aceito os termos de uso.</h4></label>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="reset" value="Limpar Campos">
+                        <input class="btn btn-primary" type="submit" value="Confirmar"/>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>                
+    </body>
+</html>    
